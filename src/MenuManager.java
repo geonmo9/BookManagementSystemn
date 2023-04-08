@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
 public class MenuManager {
-
 	public static void main(String[] args) {
-		int num = 5;
+		int num =5;
 		Scanner input = new Scanner(System.in);
-
+		
 		while (num != 6) {
 			System.out.println("1. Add Books");
 			System.out.println("2. Delete Books");
@@ -16,54 +15,77 @@ public class MenuManager {
 			System.out.println("Sellect one number between 1-6:");
 			num = input.nextInt();
 			if (num == 1) {
-				addStudent();
-
-			} else if (num == 2) {
-				deleteStudent();
-
-			} else if (num == 3) {
-				editStudent();
-
-			} else if (num == 4) {
-				viewStudent();
-
-			} else {
+				addBook();
+				
+			}
+			else if (num == 2) {
+				deleteBook();
+				
+			}
+			else if (num == 3) {
+				editBook();
+				
+			}
+			else if (num == 4) {
+				viewBook();
+				
+			}
+			else {
 				continue;
 			}
 		}
 	}
 
-	public static void addStudent() {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Student ID:");
-		int studerntId = input.nextInt();
-		System.out.print("Student name:");
-		String studenttName = input.next();
-		System.out.print("Email address:");
-		String studentEmail = input.next();
-		System.out.println(studentEmail);
-		System.out.print("Phone number:");
-		String studentPhone = input.next();
+	
+	private static void viewBook() {
+
+		
 	}
 
+
+	private static void editBook() {
+
+		
+	}
+
+
+	private static void deleteBook() {
+
+		
+	}
+
+
+	public static void addBook() {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Book ID:");
+		 int BookId = input.nextInt();
+		System.out.print("Book name:");
+		String BooktName = input.next();
+		System.out.print("Email address:");
+		String BookEmail = input.next();
+		System.out.println(BookEmail);
+		System.out.print("Phone number:");
+		String BookPhone = input.next();
+	}
+	
 	public static void deleteStudent() {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Student ID:");
-		int studerntId = input.nextInt();
+		System.out.print("Book ID:");
+		 int BookId = input.nextInt();
 	}
-
+	
 	public static void editStudent() {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Student ID:");
-		int studerntId = input.nextInt();
+		System.out.print("Book ID:");
+		 int BookId = input.nextInt();
 
 	}
 
 	public static void viewStudent() {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Student ID:");
-		int studerntId = input.nextInt();
+		System.out.print("Book ID:");
+		 int BookId = input.nextInt();
 
 	}
-
-}
+	
+}	
