@@ -68,20 +68,20 @@ public class MenuManager {
 		String BookPhone = input.next();
 	}
 	
-	public static void deleteStudent() {
+	public static void deleteBook1() {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Book ID:");
 		 int BookId = input.nextInt();
 	}
 	
-	public static void editStudent() {
+	public static void editBook1() {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Book ID:");
 		 int BookId = input.nextInt();
 
 	}
 
-	public static void viewStudent() {
+	public static void viewBook1() {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Book ID:");
 		 int BookId = input.nextInt();
